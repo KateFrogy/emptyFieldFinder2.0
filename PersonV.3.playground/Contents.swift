@@ -6,7 +6,7 @@ func randomString(length: Int) -> String {
 }
 func GenerateString (lenOfString:Int)-> String{
     let Probability = lenOfString
-    if Probability > 8 {
+    if Probability > 7 {
         return ""
     }else{
         return randomString(length: lenOfString)
@@ -14,7 +14,7 @@ func GenerateString (lenOfString:Int)-> String{
 }
 // НОВОЕ - Сделала функцию, которая генерирует номера
 func GenerateNumber (Probability: Int) -> Int?{ //Здесь ? стоит, потому что возвращаемое значение может быть пустым
-    if Probability > 8 {
+    if Probability > 7 {
         return nil
     } else {
         return Int.random(in: 1...100)
